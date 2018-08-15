@@ -28,8 +28,8 @@ var geocodeAddress = (address, callback) =>
       //to declare an object you only need to specify the properties of object within the parenthesis --> {}
       callback(undefined, {
         address: body.results[0].formatted_address,
-        Latitude: body.results[0].geometry.location.lat,
-        Longitude:body.results[0].geometry.location.lng
+        latitude: body.results[0].geometry.location.lat,
+        longitude:body.results[0].geometry.location.lng
       });
     }
   //console.log(`Address: ${body.results[0].address_components[0].types[0]}`);
